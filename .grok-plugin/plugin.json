@@ -1,13 +1,18 @@
 {
   "name": "log10x",
   "version": "1.30.45",
-  "description": "Rank log patterns by cost, then compact, tier down or offload them. No log data reaches log10x.",
+  "description": "Double your logging capacity, or cut your Splunk, Datadog, Elastic or ClickHouse bill by half. The 10x plugin gives your coding agent the tools to automatically and losslessly compact, tier down or offload to S3 the logs that drive the bill. Everything runs in your network and plugs into your existing log forwarder, or into serverless on AWS and Azure.",
   "author": {
     "name": "Log10x"
   },
   "repository": "https://github.com/log-10x/log10x-plugin.git",
   "homepage": "https://doc.log10x.com/apps/mcp/",
   "license": "MIT",
-  "keywords": ["log10x", "logs", "log cost", "mcp"],
+  "keywords": [
+    "log10x",
+    "logs",
+    "log cost",
+    "mcp"
+  ],
   "mcpServers": "./mcp.json"
 }

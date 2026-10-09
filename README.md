@@ -1,6 +1,6 @@
 # Log10x
 
-Rank log patterns by cost, then compact, tier down or offload them. No log data reaches log10x.
+Double your logging capacity, or cut your Splunk, Datadog, Elastic or ClickHouse bill by half. The 10x plugin gives your coding agent the tools to automatically and losslessly compact, tier down or offload to S3 the logs that drive the bill. Everything runs in your network and plugs into your existing log forwarder, or into serverless on AWS and Azure.
 
 This plugin installs the Log10x MCP server (npm package [`log10x-mcp`](https://www.npmjs.com/package/log10x-mcp), source at [github.com/log-10x/log10x-mcp](https://github.com/log-10x/log10x-mcp), MIT) for Cursor, Grok Bot and Grok Build. The server runs on the machine the agent runs on, over stdio, started with `npx` and pinned to one release. Documentation: [doc.log10x.com/apps/mcp](https://doc.log10x.com/apps/mcp/).
 
@@ -13,6 +13,8 @@ The server starts read-only against the public Log10x demo dataset. Nothing need
 Ask the agent to sign in. It calls `log10x_signin_start`, the browser opens a sign-in page, and `log10x_signin_complete` saves the key to `~/.log10x/credentials`. Setting `LOG10X_API_KEY` in the environment works too.
 
 ## Network endpoints
+
+No log data reaches log10x.
 
 | Host | When it is called | What it receives |
 |---|---|---|
