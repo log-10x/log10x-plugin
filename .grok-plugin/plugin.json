@@ -1,0 +1,13 @@
+{
+  "name": "log10x",
+  "version": "1.30.45",
+  "description": "Rank log patterns by cost, then compact, tier down or offload them. No log data reaches log10x.",
+  "author": {
+    "name": "Log10x"
+  },
+  "repository": "https://github.com/log-10x/log10x-plugin.git",
+  "homepage": "https://doc.log10x.com/apps/mcp/",
+  "license": "MIT",
+  "keywords": ["log10x", "logs", "log cost", "mcp"],
+  "mcpServers": "./mcp.json"
+}

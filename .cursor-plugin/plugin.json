@@ -1,0 +1,15 @@
+{
+  "name": "log10x",
+  "displayName": "Log10x",
+  "version": "1.30.45",
+  "description": "Rank log patterns by cost, then compact, tier down or offload them. No log data reaches log10x.",
+  "author": {
+    "name": "Log10x",
+    "email": "hello@log10x.com"
+  },
+  "homepage": "https://doc.log10x.com/apps/mcp/",
+  "repository": "https://github.com/log-10x/log10x-plugin",
+  "license": "MIT",
+  "keywords": ["log10x", "logs", "log cost", "splunk", "datadog", "elasticsearch", "cloudwatch", "mcp"],
+  "logo": "assets/logo.svg"
+}
