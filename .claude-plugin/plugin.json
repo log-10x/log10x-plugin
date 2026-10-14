@@ -1,0 +1,26 @@
+{
+  "name": "log10x",
+  "version": "1.30.45",
+  "description": "Ranks log patterns by volume and cost and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x. Read-only analysis through the MCP alone is free and counts no nodes.",
+  "author": {
+    "name": "Log10x",
+    "email": "hello@log10x.com",
+    "url": "https://www.log10x.com"
+  },
+  "homepage": "https://doc.log10x.com/apps/mcp/",
+  "repository": "https://github.com/log-10x/log10x-plugin",
+  "license": "MIT",
+  "keywords": [
+    "log10x",
+    "logs",
+    "log cost",
+    "observability",
+    "splunk",
+    "datadog",
+    "elasticsearch",
+    "clickhouse",
+    "cloudwatch",
+    "mcp"
+  ],
+  "mcpServers": "./mcp.json"
+}

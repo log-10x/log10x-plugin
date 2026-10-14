@@ -1,0 +1,34 @@
+{
+  "name": "log10x",
+  "version": "1.30.45",
+  "description": "Ranks log patterns by volume and cost and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x.",
+  "author": {
+    "name": "Log10x",
+    "email": "hello@log10x.com",
+    "url": "https://www.log10x.com"
+  },
+  "homepage": "https://doc.log10x.com/apps/mcp/",
+  "repository": "https://github.com/log-10x/log10x-plugin",
+  "license": "MIT",
+  "keywords": ["log10x", "logs", "log cost", "observability", "splunk", "datadog", "elasticsearch", "clickhouse", "cloudwatch", "mcp"],
+  "mcpServers": "./mcp.json",
+  "interface": {
+    "displayName": "Log10x",
+    "shortDescription": "Rank log patterns by cost",
+    "longDescription": "Log10x ranks the log patterns that drive a log platform's bill by volume and cost, and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. On Datadog and CloudWatch the levers are tier down and offload. Without an account the server starts read-only against the public Log10x demo dataset. With an account key it queries the account's per-pattern metrics. The MCP server runs on the machine the agent runs on, over stdio, started with npx and pinned to one release, and no log data reaches log10x. The tool that writes engine policy needs an account and runs only when the agent asks to apply, subject to the client's approval prompt. For the engineers who own log costs on Splunk, Datadog, Elasticsearch, ClickHouse or CloudWatch.",
+    "developerName": "Log10x",
+    "category": "Developer Tools",
+    "capabilities": ["Rank log patterns by volume and cost", "Plan an action per pattern", "Write engine policy with an account"],
+    "websiteURL": "https://doc.log10x.com/apps/mcp/",
+    "supportURL": "https://www.log10x.com/contact",
+    "privacyPolicyURL": "https://www.log10x.com/privacy-policy",
+    "termsOfServiceURL": "https://www.log10x.com/terms-and-condition",
+    "defaultPrompt": [
+      "Which log patterns drive my log cost?",
+      "Show me how to install Log10x on my stack.",
+      "Which action applies to my top pattern on Splunk?"
+    ],
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg"
+  }
+}
