@@ -1,7 +1,7 @@
 {
   "name": "log10x",
   "displayName": "Log10x",
-  "version": "1.30.45",
+  "version": "1.30.65",
   "description": "Double your logging capacity, or cut your Splunk, Datadog, Elastic or ClickHouse bill by half. The 10x plugin gives your coding agent the tools to automatically and losslessly compact, tier down or offload to S3 the logs that drive the bill. Everything runs in your network and plugs into your existing log forwarder, or into serverless on AWS and Azure.",
   "author": {
     "name": "Log10x",
