@@ -1,7 +1,7 @@
 {
   "name": "log10x",
   "version": "1.30.45",
-  "description": "Ranks log patterns by volume and cost and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x.",
+  "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x.",
   "author": {
     "name": "Log10x",
     "email": "hello@log10x.com",
@@ -15,7 +15,7 @@
   "interface": {
     "displayName": "Log10x",
     "shortDescription": "Rank log patterns by cost",
-    "longDescription": "Log10x ranks the log patterns that drive a log platform's bill by volume and cost, and plans an action for each pattern: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. On Datadog and CloudWatch the levers are tier down and offload. Without an account the server starts read-only against the public Log10x demo dataset. With an account key it queries the account's per-pattern metrics. The MCP server runs on the machine the agent runs on, over stdio, started with npx and pinned to one release, and no log data reaches log10x. The tool that writes engine policy needs an account and runs only when the agent asks to apply, subject to the client's approval prompt. For the engineers who own log costs on Splunk, Datadog, Elasticsearch, ClickHouse or CloudWatch.",
+    "longDescription": "Log10x ranks the log patterns that drive a log platform's bill by volume and cost, and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. On Datadog and CloudWatch the levers are tier down and offload. Without an account the server starts read-only against the public Log10x demo dataset. With an account key it queries the account's per-pattern metrics. The MCP server runs on the machine the agent runs on, over stdio, started with npx and pinned to one release, and no log data reaches log10x. The tool that writes engine policy needs an account and runs only when the agent asks to apply, subject to the client's approval prompt. For the engineers who own log costs on Splunk, Datadog, Elasticsearch, ClickHouse or CloudWatch.",
     "developerName": "Log10x",
     "category": "Developer Tools",
     "capabilities": ["Rank log patterns by volume and cost", "Plan an action per pattern", "Write engine policy with an account"],
