@@ -1,11 +1,11 @@
 {
   "name": "log10x",
-  "version": "1.30.65",
+  "version": "1.30.74",
   "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. Runs on the agent's machine; no log data reaches log10x.",
   "mcpServers": {
     "log10x": {
       "command": "npx",
-      "args": ["-y", "log10x-mcp@1.30.65"],
+      "args": ["-y", "log10x-mcp@1.30.74"],
       "env": {
         "LOG10X_MANIFEST_DISABLED": "1"
       }
