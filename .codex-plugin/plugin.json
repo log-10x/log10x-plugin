@@ -11,7 +11,7 @@
   "repository": "https://github.com/log-10x/log10x-plugin",
   "license": "MIT",
   "keywords": ["log10x", "logs", "log cost", "observability", "splunk", "datadog", "elasticsearch", "clickhouse", "cloudwatch", "mcp"],
-  "mcpServers": "./mcp.json",
+  "mcpServers": "./mcp.agents.json",
   "interface": {
     "displayName": "Log10x",
     "shortDescription": "Rank log patterns by cost",

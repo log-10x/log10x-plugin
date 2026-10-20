@@ -22,5 +22,5 @@
     "cloudwatch",
     "mcp"
   ],
-  "mcpServers": "./mcp.json"
+  "mcpServers": "./mcp.agents.json"
 }
