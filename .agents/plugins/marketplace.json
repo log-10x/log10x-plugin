@@ -1,0 +1,20 @@
+{
+  "name": "log10x",
+  "interface": {
+    "displayName": "Log10x"
+  },
+  "plugins": [
+    {
+      "name": "log10x",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
