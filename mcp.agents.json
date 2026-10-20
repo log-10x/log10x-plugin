@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "log10x": {
+      "command": "npx",
+      "args": ["-y", "log10x-mcp@1.30.65"],
+      "env": {
+        "LOG10X_MANIFEST_DISABLED": "1"
+      }
+    }
+  }
+}

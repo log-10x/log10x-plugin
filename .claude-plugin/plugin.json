@@ -1,6 +1,6 @@
 {
   "name": "log10x",
-  "version": "1.30.45",
+  "version": "1.30.65",
   "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x. Read-only analysis through the MCP alone is free and counts no nodes.",
   "author": {
     "name": "Log10x",
@@ -22,5 +22,5 @@
     "cloudwatch",
     "mcp"
   ],
-  "mcpServers": "./mcp.json"
+  "mcpServers": "./mcp.agents.json"
 }
