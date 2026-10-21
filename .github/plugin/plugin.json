@@ -1,7 +1,7 @@
 {
   "name": "log10x",
   "description": "Ranks log patterns by volume and cost and plans an action for the excess over each cap: compact on Splunk and self-managed Elasticsearch, tier down or offload to S3 on other platforms. Runs the log10x MCP server locally over stdio; no log data reaches log10x.",
-  "version": "1.30.74",
+  "version": "1.30.76",
   "author": {
     "name": "Log10x",
     "url": "https://www.log10x.com"
