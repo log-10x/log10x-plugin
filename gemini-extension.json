@@ -1,11 +1,11 @@
 {
   "name": "log10x",
-  "version": "1.30.76",
-  "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. Runs on the agent's machine; no log data reaches log10x.",
+  "version": "1.30.78",
+  "description": "Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line. The 10x engine runs beside the log forwarder you already have and compacts, tiers down or offloads logs pattern by pattern; this extension gives Gemini CLI the controls: what each pattern costs and where it goes. Log data never reaches log10x.",
   "mcpServers": {
     "log10x": {
       "command": "npx",
-      "args": ["-y", "log10x-mcp@1.30.76"],
+      "args": ["-y", "log10x-mcp@1.30.78"],
       "env": {
         "LOG10X_MANIFEST_DISABLED": "1"
       }

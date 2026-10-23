@@ -1,6 +1,18 @@
 # Log10x
 
-Double your logging capacity, or cut your Splunk, Datadog, Elastic or ClickHouse bill by half. The 10x plugin gives your coding agent the tools to automatically and losslessly compact, tier down or offload to S3 the logs that drive the bill. Everything runs in your network and plugs into your existing log forwarder, or into serverless on AWS and Azure.
+Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line. The 10x engine runs beside the log forwarder you already have, or in serverless on AWS and Azure, and compacts, tiers down or offloads logs pattern by pattern; this plugin gives your coding agent the controls: what each pattern costs and where it goes. Log data never reaches log10x.
+
+| Platform | Compact (lossless, in place) | Tier down (the platform's own cheaper tier) | Offload to your S3 |
+|---|---|---|---|
+| Splunk | 10x Splunk app expands at search time | | yes |
+| Elasticsearch, self-managed | 10x plugin expands at query time | frozen tier | yes |
+| OpenSearch | 10x plugin expands at query time | | yes |
+| Elastic Serverless | | cost-efficient tier | yes |
+| Datadog | | Flex Logs | yes |
+| CloudWatch | | Infrequent Access | yes |
+| Azure Monitor | | Basic tier | yes |
+| Coralogix | | Monitoring tier | yes |
+| ClickHouse, New Relic, Google Cloud, Dynatrace, Sumo Logic, Loki, LogScale, VictoriaLogs | | | yes |
 
 This plugin installs the Log10x MCP server (npm package [`log10x-mcp`](https://www.npmjs.com/package/log10x-mcp), source at [github.com/log-10x/log10x-mcp](https://github.com/log-10x/log10x-mcp), MIT) for Cursor, Grok Bot, Grok Build, Claude Code, Codex and Gemini CLI. The server runs on the machine the agent runs on, over stdio, started with `npx` and pinned to one release. Documentation: [doc.log10x.com/apps/mcp](https://doc.log10x.com/apps/mcp/).
 

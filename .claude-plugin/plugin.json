@@ -1,7 +1,8 @@
 {
   "name": "log10x",
-  "version": "1.30.76",
-  "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x. Read-only analysis through the MCP alone is free and counts no nodes.",
+  "displayName": "Log10x",
+  "version": "1.30.78",
+  "description": "Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line. The 10x engine runs beside the log forwarder you already have and compacts, tiers down or offloads logs pattern by pattern; this plugin gives Claude the controls: what each pattern costs and where it goes. Log data never reaches log10x.",
   "author": {
     "name": "Log10x",
     "email": "hello@log10x.com",
@@ -22,5 +23,10 @@
     "cloudwatch",
     "mcp"
   ],
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://doc.log10x.com/apps/mcp/",
+  "supportUrl": "https://www.log10x.com/contact",
+  "privacyPolicyUrl": "https://www.log10x.com/privacy-policy",
+  "termsOfServiceUrl": "https://www.log10x.com/terms-and-condition",
   "mcpServers": "./mcp.agents.json"
 }
