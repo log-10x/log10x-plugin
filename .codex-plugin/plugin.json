@@ -1,7 +1,7 @@
 {
   "name": "log10x",
-  "version": "1.30.76",
-  "description": "Ranks log patterns by volume and cost and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. The MCP server runs on the machine the agent runs on, over stdio, and no log data reaches log10x.",
+  "version": "1.30.78",
+  "description": "Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line. The 10x engine runs beside the log forwarder you already have and compacts, tiers down or offloads logs pattern by pattern; this plugin gives Codex the controls: what each pattern costs and where it goes. Log data never reaches log10x.",
   "author": {
     "name": "Log10x",
     "email": "hello@log10x.com",
@@ -14,8 +14,8 @@
   "mcpServers": "./mcp.agents.json",
   "interface": {
     "displayName": "Log10x",
-    "shortDescription": "Rank log patterns by cost",
-    "longDescription": "Log10x ranks the log patterns that drive a log platform's bill by volume and cost, and plans compact (Splunk, self-managed Elasticsearch), tier down or offload to S3 for the excess over each cap. On Datadog and CloudWatch the levers are tier down and offload. Without an account the server starts read-only against the public Log10x demo dataset. With an account key it queries the account's per-pattern metrics. The MCP server runs on the machine the agent runs on, over stdio, started with npx and pinned to one release, and no log data reaches log10x. The tool that writes engine policy needs an account and runs only when the agent asks to apply, subject to the client's approval prompt. For the engineers who own log costs on Splunk, Datadog, Elasticsearch, ClickHouse or CloudWatch.",
+    "shortDescription": "Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line",
+    "longDescription": "Lower your Splunk, Datadog, Elastic, CloudWatch or ClickHouse log bill and keep every line. The 10x engine runs beside the log forwarder you already have and compacts, tiers down or offloads logs pattern by pattern: lossless compaction on Splunk, self-managed Elasticsearch and OpenSearch; tier down to Datadog Flex, CloudWatch Infrequent Access, the Elasticsearch frozen tier, Azure Monitor Basic or Coralogix Monitoring; offload to your own S3 from any of the sixteen supported platforms. This plugin gives Codex the controls: what each pattern costs and where it goes. Without an account the server starts read-only against the public Log10x demo dataset. With an account key it queries the account's per-pattern metrics. The MCP server runs on the machine Codex runs on, over stdio, started with npx and pinned to one release, and no log data reaches log10x. The tool that writes engine policy needs an account and runs only when Codex asks to apply, subject to the approval prompt.",
     "developerName": "Log10x",
     "category": "Developer Tools",
     "capabilities": ["Rank log patterns by volume and cost", "Plan an action per pattern", "Write engine policy with an account"],
