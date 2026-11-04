@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "log10x": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "log10x-mcp@1.30.78"
+      ],
+      "env": {
+        "LOG10X_MANIFEST_DISABLED": "1"
+      }
+    }
+  }
+}
